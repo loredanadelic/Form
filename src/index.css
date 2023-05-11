@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: #f1f3f6;
+}
+.formSection {
+  width: 30rem;
+  border-style: solid;
+  border-color: coral;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.inputComponent {
+  margin: 1.5rem 0;
+}
+
+input,
+select {
+  width: 100%;
+  height: 1.75rem;
+  border-radius: 0.5rem;
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+}
+
+.radioInput input,
+.checkbox input {
+  height: 1rem;
+  width: 2rem;
+}
+.checkbox {
+  margin-top: 2rem;
+}
+.radioInput label,
+.checkbox label {
+  text-justify: center;
+  width: 10rem;
+}
+
+.button {
+  margin: auto;
+  width: 40%;
+  padding: 2rem;
+}
+button {
+  width: 100%;
+  height: 2rem;
+  border-color: coral;
+  border-radius: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+button:hover {
+  background-color: coral;
+  color: ghostwhite;
+}
+button:disabled:hover {
+  cursor: not-allowed;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: var(--color);
+  margin: 0.5rem 0.5rem 0 0rem;
+}
+.validationDiv {
+  display: flex;
+}
+
+p {
+  margin: 0.2rem 0 1rem 0;
+}
+
+.alertModal {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  width: max-content;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 75vw;
+  background-color: rgb(255, 250, 250);
+  padding: 3rem;
+  border-style: solid ;
+  border-radius: 2rem;
+  border-color:coral;
+}
+.alertModal button{
+  margin-top:2rem;
+}
